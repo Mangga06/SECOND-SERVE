@@ -1,0 +1,8 @@
+# Dataset-specific mappings are deliberately explicit. Unmapped source labels stay UNMAPPED
+# and are excluded from training until a reviewer maps them.
+target_classes: [rice, dal, roti, sabzi, curry, paneer, salad, fruit, dessert, other]
+sources:
+  FoodSeg103: {rice: rice, bread: roti, salad: salad, UNMAPPED: UNMAPPED}
+  UECFoodPixComplete: {rice: rice, curry: curry, salad: salad, UNMAPPED: UNMAPPED}
+  Nutrition5k: {rice: rice, chicken_curry: curry, vegetables: sabzi, UNMAPPED: UNMAPPED}
+  Food-101: {UNMAPPED: UNMAPPED}

@@ -1,0 +1,15 @@
+services:
+  secondserve:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - secondserve-data:/app/data
+    environment:
+      DATA_DIR: /app/data
+      APP_URL: http://localhost:8000
+      ALLOWED_ORIGINS: http://localhost:8000,http://127.0.0.1:8000
+      COOKIE_SECURE: "false"
+    restart: unless-stopped
+volumes:
+  secondserve-data:

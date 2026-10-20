@@ -1,0 +1,3 @@
+# Optional trained food recognition. Default classical CV needs none of these.
+torch>=2.5
+ultralytics>=8.3
